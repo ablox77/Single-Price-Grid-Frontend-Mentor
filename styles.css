@@ -1,0 +1,166 @@
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: .6px;
+}
+
+body {
+    background-color: var(--Light-Gray);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    margin: 15% 0 15% 0;
+    overflow: hidden;
+    border-radius: .35rem;
+}
+
+.article1 {
+    background-color: white;
+    padding: 1.75rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.article1 h1 {
+    color: var(--Cyan);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.article1 .green-paragraph {
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+    font-size: .9rem;
+    padding: 1.25rem 0 1.25rem 0;
+}
+
+.article1 .grey-paragraph {
+    color: var(--Light-Gray);
+    filter: brightness(.60);
+    font-weight: 200;
+    font-size: .8rem;
+    line-height: 1.5rem;
+}
+
+.article2 {
+    background-color: var(--Cyan);
+    color: var(--Light-Gray);
+    padding: 1.75rem;
+    padding-bottom: 1.5rem;
+}
+
+.article2 h1 {
+    font-weight: 700;
+    padding-bottom: 1rem;
+    font-size: 1rem
+}
+
+.article2 .price-container {
+    display: flex;
+    gap: .75rem;
+}
+
+.article2 .price {
+    font-weight: 700;
+    font-size: 1.9rem
+}
+
+.article2 .price-description {
+    font-size: 1rem;
+    font-weight: 200;
+    align-self: center;
+    color: var(--Grayish-Blue);
+    filter: brightness(1.35)
+}
+
+.article2 p {
+    font-size: .9rem;
+    padding: .3rem 0 1.5rem 0;
+    font-weight: 400;
+}
+
+.article2 button {
+    background-color: var(--Bright-Yellow);
+    color: var(--Light-Gray);
+    font-weight: 700;
+    width: 100%;
+    height: 3rem;
+    border-radius: .35rem;
+    border: none;
+    box-shadow: 3px 5px 15px hsl(179, 58%, 36%);
+}
+
+.article3 {
+    background-color: hsl(179, 62%, 43%);
+    filter: brightness(1.10);
+    color: var(--Light-Gray);
+    padding: 1.75rem;
+    
+}
+
+.article3 h1 {
+    font-weight: 700;
+    padding-bottom: 1rem;
+    font-size: 1rem
+}
+
+.article3 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.article3 li {
+    font-size: .8rem;
+    padding: .2rem 0 .2rem 0;
+    font-weight: 200;
+}
+
+@media (min-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 40%;
+    }
+    .article1 {
+        width: 100%;
+        padding-right: 4rem;
+    }
+    
+    .article1 .green-paragraph {
+        padding-bottom: .5rem;
+    }
+
+    .article2 {
+        width: 50%;
+    }
+
+    .article2 p {
+        font-size: .85rem;
+        padding-bottom: 2.3rem;
+    }
+
+    .article3 {
+        width: 50%;
+    }
+
+}
